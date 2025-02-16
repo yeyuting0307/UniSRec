@@ -1,4 +1,4 @@
-UniSRec - Unified Sequential Recommendation
+UniSRec - Universal Sequence Representation
 ===
 
 ## Introduction
