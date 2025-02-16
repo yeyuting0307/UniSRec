@@ -1,0 +1,38 @@
+# general
+device: cuda
+
+
+# Dataset
+load_col:
+    inter: [user_id, item_id_list, item_id]
+field_separator: '	'
+seq_separator: ' '
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+ITEM_ID_LIST_FIELD: item_id_list
+ITEM_TEXT_MAP_FIELD: item_text
+ITEM_SEQ_MASK_PROB: 0.8
+ITEM_SEQ_MASK_RATIO: 0.2
+
+
+SEQ_FIELD: item_id_list
+RATING_FIELD: None
+TIME_FIELD: None
+item_text_csv_path: data/fixed/project/item_token_text.csv
+fixed_item_emb_path: data/fixed/project/item_emb.pkl
+
+
+# Model
+embedding_size: 768
+
+encoder_model: 'Mike0307/text2vec-base-chinese-rag'
+MoE_is_noisy_gate: True
+PW_input_dim: 768
+PW_output_dim: 300
+PW_dropout_prob: 0.1
+MoE_experts: 8
+pretrain_lambda: 1e-3
+temperature: 0.07
+ITEM_SEQ_AUG_SUFFIX: '_aug'
+
+

@@ -1,0 +1,9 @@
+data_path: 'data/pretrain'
+benchmark_filename: [train]
+stage: pretrain
+train_batch_size: 1024
+pretrain_epochs: 300
+save_step: 50
+loss_type: 'BPR'
+checkpoint_dir: 'checkpoints'
+device: cuda

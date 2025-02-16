@@ -1,0 +1,19 @@
+data_path: 'data/inference'
+benchmark_filename: [test]
+stage: finetune
+parameter_efficient: inductive
+topk: [10, 50]
+metrics: [Hit, NDCG]
+valid_metric: NDCG@10
+eval_batch_size: 1024
+eval_step: 1
+loss_type: 'CE'
+stopping_step: 1
+learning_rate: 0.001
+epochs: 1
+train_neg_sample_args:
+
+save_step: 1
+
+device: cuda
+checkpoint_dir: saved

@@ -1,0 +1,7 @@
+USER_ID_FIELD: 'user_id'
+ITEM_ID_FIELD: 'item_id'
+LIST_SUFFIX: '_list'
+ITEM_LIST_LENGTH_FIELD: 'item_id_list_len'
+NEG_PREFIX: 'neg_'
+MAX_ITEM_LIST_LENGTH: 50
+device: cuda
